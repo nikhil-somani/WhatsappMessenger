@@ -22,7 +22,10 @@ base = 'https://wa.me/'
 url =  base + code + number
 def helper():
     webbrowser.open_new_tab(url)
-st.button('Whatsapp Now', on_click=helper)
+button = st.button('Whatsapp Now', on_click=helper)
+
+if button:
+    helper()
 
 
 
